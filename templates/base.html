@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SQLi Detector</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="icon" type="image/png" href="{{url_for('static', filename='images/logo_unpsjb.ico')}}" />
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  	<!--<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Contact</a></li>
+			  	</ul>-->
+		  		<ul class="nav navbar-nav navbar-right">
+					<li><a style="color: #000000;" href="#"><span class="glyphicon glyphicon-log-in btn-login"></span> Login</a></li>
+		  		</ul>
+		  		<h4 class="titulo">Fundamentos Teoricos de Informática</h4>
+			</div>
+	  	</div>
+	</nav>
+
+    {% block contenido %}
+
+    {% endblock contenido %}
+
+	<footer class="container-fluid text-center">
+
+		<label for="">UNPSJB</label> <br>
+
+		<img class="flask-image" src="{{url_for('static', filename='images/flask.png')}}" alt="">
+	</footer>
+
+</body>
+</html>
